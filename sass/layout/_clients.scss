@@ -1,0 +1,45 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  }
+  &__icon {
+    fill: var(--primery-text-color);
+    transition: fill var(--transition-dur-and-func);
+    .clients__link:hover &,
+    .clients__link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    &__link {
+      width: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__link {
+      width: 170px;
+    }
+  }
+}
