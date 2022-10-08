@@ -3,12 +3,14 @@
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -30,16 +32,16 @@
 
 @media screen and (min-width: 768px) {
   .clients {
-    &__link {
-      width: 226px;
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
-    &__link {
-      width: 170px;
+    &__item {
+      flex-basis: calc((100% - 150px) / 6);
     }
   }
 }

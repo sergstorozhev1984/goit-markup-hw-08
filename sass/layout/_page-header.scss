@@ -1,0 +1,142 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu-btn {
+    border: none;
+    line-height: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .site-nav {
+    display: none;
+  }
+  .auth-nav {
+    display: none;
+  }
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo__span_black {
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 87px;
+  }
+  .site-nav {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: -1px;
+
+    &__link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--title-text-color);
+      transition: color var(--transition-dur-and-func);
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--accent-color);
+    }
+    &__link_current {
+      color: var(--accent-color);
+      padding-bottom: 0;
+      &::after {
+        content: '';
+        display: block;
+        margin-top: 28px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .auth-nav__item:first-child {
+    margin-bottom: 10px;
+  }
+
+  .auth-nav__link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+    transition: color var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .auth-nav__icon {
+    fill: var(--primery-text-color);
+    transition: fill var(--transition-dur-and-func);
+    .auth-nav__link:hover &,
+    .auth-nav__link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+  .auth-nav__icon_mail {
+    width: 14px;
+    height: 10px;
+  }
+  .auth-nav__icon_tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    column-gap: 93px;
+  }
+  .site-nav__link_current {
+    &::after {
+      margin-top: 29px;
+    }
+  }
+  .auth-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    column-gap: 10px;
+
+    &__item:first-child {
+      margin-bottom: 0;
+    }
+    &__link {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__icon_mail {
+      width: 16px;
+      height: 12px;
+    }
+    &__icon_tel {
+      width: 10px;
+      height: 16px;
+    }
+  }
+}
