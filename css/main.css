@@ -610,7 +610,7 @@ img {
   padding: 118px 0;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile.jpg), linear-gradient(to right, #c4c4c4, #c4c4c4);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero-mobile.jpg), linear-gradient(to right, #c4c4c4, #c4c4c4);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -630,7 +630,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/hero-mobile@2x.jpg"), linear-gradient(to right, #c4c4c4, #c4c4c4);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero-mobile@2x.jpg), linear-gradient(to right, #c4c4c4, #c4c4c4);
   }
 }
 @media screen and (min-width: 481px) {
