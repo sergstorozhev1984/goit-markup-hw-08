@@ -1,3 +1,8 @@
+@media screen and (max-width: 479px) {
+  .modal-form {
+    max-width: 450px;
+  }
+}
 .modal-form {
   display: flex;
   flex-direction: column;

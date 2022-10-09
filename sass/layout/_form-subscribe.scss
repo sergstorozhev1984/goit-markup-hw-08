@@ -1,15 +1,11 @@
-.subscribe {
-  width: 570px;
-}
-
 .form-subscribe {
-  display: flex;
+  display: block;
 
   &__input {
     display: block;
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding: 15px 0 15px 16px;
-    width: 358px;
+    width: 100%;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
