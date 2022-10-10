@@ -84,8 +84,8 @@
   margin-bottom: 30px;
   margin-left: 12px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   cursor: pointer;
@@ -120,4 +120,20 @@
 }
 .modal-form-btn {
   align-self: center;
+}
+
+@media screen and (max-width: 450px) {
+  .modal-form-check-wrapper {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    max-width: 528px;
+  }
+  .modal-form-check-wrapper {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
