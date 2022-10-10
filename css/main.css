@@ -204,6 +204,8 @@ img {
   }
   .mobile-menu__social {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   .mobile-menu__social-link {
     display: flex;
